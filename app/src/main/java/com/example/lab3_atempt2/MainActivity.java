@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
         TextView newAnswer = new TextView(binding.textView.getContext());
         if(message.matches("Привет")) {
             newAnswer.setText("Пока");
+        } else if (message.matches("Кто ты\\?")){
+            newAnswer.setText("bibis");
         }
         else {
             newAnswer.setText("Я не понимаю что значит *" + message + "*");
